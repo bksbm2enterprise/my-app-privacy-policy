@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Sereńko</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1c1b1f;
+    --muted: #5f6368;
+    --accent: #6650a4;
+    --border: #e5e5e5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --text: #eaeaea;
+      --muted: #a0a0a0;
+      --accent: #cbb8ff;
+      --border: #2a2a2a;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 4px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 36px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 36px;
+    margin-bottom: 8px;
+    color: var(--accent);
+  }
+  p, li {
+    font-size: 0.98rem;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  a {
+    color: var(--accent);
+  }
+  .box {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-top: 10px;
+    background: color-mix(in srgb, var(--accent) 6%, transparent);
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <div class="updated">Sereńko — Christian Hymn Book App · Last updated: <span id="updated-date"></span></div>
+
+    <p>
+      This Privacy Policy explains how the Sereńko app ("the App", "we", "our")
+      handles information when you use it. We built this app to be simple and
+      respectful of your privacy — it does not require an account, does not
+      run ads, and does not collect or sell personal data.
+    </p>
+
+    <h2>1. Information We Do Not Collect</h2>
+    <p>The App does <strong>not</strong>:</p>
+    <ul>
+      <li>Require you to sign up, log in, or provide any personal details</li>
+      <li>Collect your name, email address, or contact list</li>
+      <li>Track your location</li>
+      <li>Use analytics or advertising SDKs</li>
+      <li>Sell or share any data with third parties</li>
+    </ul>
+
+    <h2>2. Information Stored on Your Device</h2>
+    <p>
+      To make the App work, a small amount of data is saved locally on your
+      device only, using Android's standard app storage. It is never sent to
+      us or anyone else. This includes:
+    </p>
+    <ul>
+      <li>Your favourite songs</li>
+      <li>Your recently opened songs</li>
+      <li>App display preferences — dark mode, color theme, font size, and search keyboard mode</li>
+    </ul>
+    <p>
+      Uninstalling the App removes all of this data from your device. We have
+      no way to access, view, or recover it.
+    </p>
+
+    <h2>3. Permissions the App Uses</h2>
+    <p>The App requests a limited set of Android permissions, used only as described below:</p>
+    <ul>
+      <li>
+        <strong>Internet access</strong> — used only to check for and download
+        app updates from our public GitHub release repository, and to open
+        external donation links (UPI apps, PayPal) and your email app if you
+        choose to contact the developer.
+      </li>
+      <li>
+        <strong>Install packages</strong> — used only so you can install an
+        app update you've chosen to download. The App will never install
+        anything without your explicit tap to confirm.
+      </li>
+      <li>
+        <strong>Storage</strong> — used only to save a downloaded update file
+        before installing it.
+      </li>
+    </ul>
+
+    <h2>4. Donations</h2>
+    <p>
+      The App's donation screen opens your own UPI app, PayPal, or email app
+      to let you choose to support development. The App itself does not
+      process, store, or have access to any payment or financial information
+      — that happens entirely within the third-party app you choose to use.
+    </p>
+
+    <h2>5. Hymn and Song Content</h2>
+    <p>
+      Hymn lyrics and categories included in the App are bundled with the App
+      itself and loaded locally — they are not fetched from or sent to any
+      server, and are not linked to you in any way.
+    </p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>
+      The App does not knowingly collect any personal information from anyone,
+      including children, because it does not collect personal information
+      from any user.
+    </p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>
+      If this policy changes, the updated version will be posted on this page
+      with a new "Last updated" date.
+    </p>
+
+    <h2>8. Contact Us</h2>
+    <div class="box">
+      If you have any questions about this Privacy Policy, please contact:
+      <br><br>
+      📧 <a href="mailto:brlasnjv2025@yahoo.com">brlasnjv2025@yahoo.com</a>
+    </div>
+
+    <footer>
+      © 2025–<span id="year"></span> Sereńko. This page describes the privacy
+      practices of the Sereńko Android application only.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('updated-date').textContent = new Date().toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+  </script>
+</body>
+</html>
